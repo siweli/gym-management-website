@@ -1,9 +1,11 @@
-import Image from "next/image";
+import { redirect } from "next/navigation";
+import "./globals.css";
 
 export default function Home() {
+  redirect("./fit-gym")
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>test</h1>
+    <main>
+      <h1>you shouldnt be here</h1>
     </main>
   );
 }
